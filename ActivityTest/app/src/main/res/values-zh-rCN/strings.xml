@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">活动测试</string>
+    <string name="button_1">按钮一</string>
+    <string name="add">添加</string>
+    <string name="remove">移除</string>
+    <string name="button_2">按钮二</string>
+    <string name="button_3">按钮三</string>
+    <string name="toast_for_button_1">您点击了按钮一</string>
+    <string name="toast_for_button_2">您点击了按钮二</string>
+    <string name="toast_for_add">您点击了“添加”</string>
+    <string name="toast_for_remove">您点击了“移除”</string>
+    <string name="first_activity">活动一</string>
+</resources>

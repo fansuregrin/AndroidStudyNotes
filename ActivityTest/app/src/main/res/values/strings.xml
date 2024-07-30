@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ActivityTest</string>
+    <string name="first_activity">First Activity</string>
+    <string name="button_1">Button 1</string>
+    <string name="toast_for_button_1">You Clicked Button 1</string>
+    <string name="toast_for_button_2">You Clicked Button 2</string>
+    <string name="add">Add</string>
+    <string name="remove">Remove</string>
+    <string name="toast_for_add">You Clicked \'Add\'</string>
+    <string name="toast_for_remove">You Clicked \'Remove\'</string>
+    <string name="button_2">Button 2</string>
+    <string name="button_3">Button 3</string>
+</resources>
