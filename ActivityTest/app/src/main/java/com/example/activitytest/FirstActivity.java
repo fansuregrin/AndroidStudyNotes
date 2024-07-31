@@ -71,6 +71,15 @@ public class FirstActivity extends AppCompatActivity {
             intent.setData(Uri.parse("tel:10086"));
             startActivity(intent);
         });
+
+        // 传递数据给下一个活动
+        Button button8 = findViewById(R.id.button_8);
+        button8.setOnClickListener(v -> {
+            String data = "Hello SecondActivity";
+            Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+            intent.putExtra("extra_data", data);
+            startActivity(intent);
+        });
     }
 
     @Override

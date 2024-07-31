@@ -44,4 +44,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/button_7"
         android:text="@string/dial" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_8"
+        android:text="@string/transfer_data" />
 </LinearLayout>

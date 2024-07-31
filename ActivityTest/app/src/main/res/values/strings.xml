@@ -16,4 +16,5 @@
     <string name="launch_browser">Launch Browser</string>
     <string name="third_activity_greet">Hi! There is third activity.</string>
     <string name="dial">Dial</string>
+    <string name="transfer_data">Transfer Data</string>
 </resources>
