@@ -1,6 +1,7 @@
 package com.example.activitytest;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -52,6 +53,22 @@ public class FirstActivity extends AppCompatActivity {
         button5.setOnClickListener(v -> {
             Intent intent = new Intent("com.example.activitytest.ACTION_START");
             intent.addCategory("com.example.activitytest.MY_CATEGORY");
+            startActivity(intent);
+        });
+
+        // 启动浏览器，访问指定网站
+        Button button6 = findViewById(R.id.button_6);
+        button6.setOnClickListener(v -> {
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("http://xiaomi.com"));
+            startActivity(intent);
+        });
+
+        // 拨号
+        Button button7 = findViewById(R.id.button_7);
+        button7.setOnClickListener(v -> {
+            Intent intent = new Intent(Intent.ACTION_DIAL);
+            intent.setData(Uri.parse("tel:10086"));
             startActivity(intent);
         });
     }

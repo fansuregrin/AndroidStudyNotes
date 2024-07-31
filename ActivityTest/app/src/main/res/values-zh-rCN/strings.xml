@@ -14,4 +14,7 @@
     <string name="button_4">按钮四</string>
     <string name="second_activity">活动二</string>
     <string name="button_5">按钮五</string>
+    <string name="launch_browser">启动浏览器</string>
+    <string name="third_activity_greet">您好呀！这里是活动三。</string>
+    <string name="dial">拨号</string>
 </resources>

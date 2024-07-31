@@ -32,4 +32,16 @@
         android:layout_height="wrap_content"
         android:id="@+id/button_5"
         android:text="@string/button_5" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_6"
+        android:text="@string/launch_browser" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_7"
+        android:text="@string/dial" />
 </LinearLayout>
