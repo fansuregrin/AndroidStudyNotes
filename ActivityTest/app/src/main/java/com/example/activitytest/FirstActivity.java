@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 import android.util.Log;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class FirstActivity extends AppCompatActivity {
@@ -79,6 +81,25 @@ public class FirstActivity extends AppCompatActivity {
             Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
             intent.putExtra("extra_data", data);
             startActivity(intent);
+        });
+
+
+        ActivityResultLauncher<Intent> launcher = registerForActivityResult(
+                new ActivityResultContracts.StartActivityForResult(),
+                result -> {
+                    if (result.getResultCode() == FirstActivity.RESULT_OK) {
+                        Intent data = result.getData();
+                        assert data != null;
+                        String returnedData = data.getStringExtra("data_return");
+                        assert returnedData != null;
+                        Log.d(TAG, returnedData);
+                    }
+                }
+        );
+        Button button9 = findViewById(R.id.button_9);
+        button9.setOnClickListener(v -> {
+            Intent intent = new Intent(FirstActivity.this, TargetActivity.class);
+            launcher.launch(intent);
         });
     }
 

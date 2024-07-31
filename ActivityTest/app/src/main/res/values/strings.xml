@@ -17,4 +17,6 @@
     <string name="third_activity_greet">Hi! There is third activity.</string>
     <string name="dial">Dial</string>
     <string name="transfer_data">Transfer Data</string>
+    <string name="to_get_data">To Get Data</string>
+    <string name="return_data">Return Data</string>
 </resources>

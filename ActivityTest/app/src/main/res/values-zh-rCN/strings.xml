@@ -18,4 +18,6 @@
     <string name="third_activity_greet">您好呀！这里是活动三。</string>
     <string name="dial">拨号</string>
     <string name="transfer_data">传递数据</string>
+    <string name="to_get_data">去获取数据</string>
+    <string name="return_data">返回数据</string>
 </resources>
