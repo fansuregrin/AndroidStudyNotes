@@ -40,6 +40,20 @@ public class FirstActivity extends AppCompatActivity {
             Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
             startActivity(intent);
         });
+
+        // 使用隐式 Intent
+        Button button4 = findViewById(R.id.button_4);
+        button4.setOnClickListener(v -> {
+            Intent intent = new Intent("com.example.activitytest.ACTION_START");
+            startActivity(intent);
+        });
+
+        Button button5 = findViewById(R.id.button_5);
+        button5.setOnClickListener(v -> {
+            Intent intent = new Intent("com.example.activitytest.ACTION_START");
+            intent.addCategory("com.example.activitytest.MY_CATEGORY");
+            startActivity(intent);
+        });
     }
 
     @Override
