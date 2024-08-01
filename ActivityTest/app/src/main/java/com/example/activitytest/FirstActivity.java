@@ -113,6 +113,13 @@ public class FirstActivity extends AppCompatActivity {
             Intent intent = new Intent(FirstActivity.this, ThirdActivity.class);
             startActivity(intent);
         });
+
+        Log.d(TAG, "Task id is " + getTaskId());
+        Button button12 = findViewById(R.id.button_12);
+        button12.setOnClickListener(v -> {
+            Intent intent = new Intent(FirstActivity.this, FifthActivity.class);
+            startActivity(intent);
+        });
     }
 
     @Override

@@ -26,4 +26,6 @@
     <string name="start_first_activity">启动活动一</string>
     <string name="start_second_activity">启动活动二</string>
     <string name="start_third_activity">启动活动三</string>
+    <string name="fifth_activity">活动五</string>
+    <string name="start_fifth_activity">启动活动五</string>
 </resources>
