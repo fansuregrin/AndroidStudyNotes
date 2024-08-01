@@ -23,4 +23,5 @@
     <string name="to_get_data">去获取数据</string>
     <string name="return_data">返回数据</string>
     <string name="third_activity">活动三</string>
+    <string name="start_first_activity">启动活动一</string>
 </resources>

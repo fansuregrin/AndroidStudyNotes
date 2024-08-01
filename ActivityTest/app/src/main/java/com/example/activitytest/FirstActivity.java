@@ -18,7 +18,7 @@ public class FirstActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.d(TAG, "creating first activity");
+        Log.d(TAG, "onCreate " + this.toString());
         super.onCreate(savedInstanceState);
         setContentView(R.layout.first_layout);
 
@@ -101,6 +101,12 @@ public class FirstActivity extends AppCompatActivity {
             Intent intent = new Intent(FirstActivity.this, TargetActivity.class);
             launcher.launch(intent);
         });
+
+        Button button10 = findViewById(R.id.button_10);
+        button10.setOnClickListener(v -> {
+            Intent intent = new Intent(FirstActivity.this, FirstActivity.class);
+            startActivity(intent);
+        });
     }
 
     @Override
@@ -122,7 +128,7 @@ public class FirstActivity extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
-        Log.d(TAG, "destroying first activity");
+        Log.d(TAG, "onDestroy " + this.toString());
         super.onDestroy();
     }
 }
