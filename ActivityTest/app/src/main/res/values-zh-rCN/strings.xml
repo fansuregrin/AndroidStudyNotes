@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">活动测试</string>
+    <string name="fourth_activity">活动四</string>
+    <string name="target_activity">目标活动</string>
     <string name="button_1">按钮一</string>
     <string name="add">添加</string>
     <string name="remove">移除</string>
@@ -20,4 +22,5 @@
     <string name="transfer_data">传递数据</string>
     <string name="to_get_data">去获取数据</string>
     <string name="return_data">返回数据</string>
+    <string name="third_activity">活动三</string>
 </resources>

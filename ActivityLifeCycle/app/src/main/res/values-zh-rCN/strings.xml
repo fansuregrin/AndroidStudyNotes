@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">活动生命周期</string>
+    <string name="text_normal">这是一个普通的活动</string>
+    <string name="text_dialog">这是一个对话框式的活动</string>
+    <string name="start_normal_activity">启动普通活动</string>
+    <string name="start_dialog_activity">启动对话框式活动</string>
+</resources>

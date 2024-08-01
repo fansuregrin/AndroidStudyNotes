@@ -77,8 +77,8 @@ public class FirstActivity extends AppCompatActivity {
         // 传递数据给下一个活动
         Button button8 = findViewById(R.id.button_8);
         button8.setOnClickListener(v -> {
-            String data = "Hello SecondActivity";
-            Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+            String data = "Hello FourthActivity";
+            Intent intent = new Intent(FirstActivity.this, FourthActivity.class);
             intent.putExtra("extra_data", data);
             startActivity(intent);
         });

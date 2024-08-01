@@ -13,11 +13,19 @@
         android:theme="@style/Theme.ActivityTest"
         tools:targetApi="31">
         <activity
+            android:name=".FourthActivity"
+            android:exported="false"
+            android:label="@string/fourth_activity"
+            />
+        <activity
             android:name=".TargetActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/target_activity"
+            />
         <activity
             android:name=".ThirdActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="@string/third_activity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
