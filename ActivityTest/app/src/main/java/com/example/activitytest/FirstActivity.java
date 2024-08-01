@@ -22,6 +22,8 @@ public class FirstActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.first_layout);
 
+        Log.d(TAG, "Task id is " + getTaskId());
+
         // 使用 Toast
         Button button1 = findViewById(R.id.button_1);
         button1.setOnClickListener(v -> Toast.makeText(FirstActivity.this,
@@ -114,10 +116,15 @@ public class FirstActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        Log.d(TAG, "Task id is " + getTaskId());
         Button button12 = findViewById(R.id.button_12);
         button12.setOnClickListener(v -> {
             Intent intent = new Intent(FirstActivity.this, FifthActivity.class);
+            startActivity(intent);
+        });
+
+        Button button13 = findViewById(R.id.button_13);
+        button13.setOnClickListener(v -> {
+            Intent intent = new Intent(this, SixthActivity.class);
             startActivity(intent);
         });
     }

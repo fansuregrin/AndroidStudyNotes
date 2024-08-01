@@ -6,6 +6,7 @@
     <string name="fourth_activity">Fourth Activity</string>
     <string name="target_activity">Target Activity</string>
     <string name="fifth_activity">Fifth Activity</string>
+    <string name="sixth_activity">Sixth Activity</string>
     <string name="button_1">Button 1</string>
     <string name="toast_for_button_1">You Clicked Button 1</string>
     <string name="toast_for_button_2">You Clicked Button 2</string>
@@ -27,4 +28,5 @@
     <string name="start_second_activity">Start SecondActivity</string>
     <string name="start_third_activity">Start ThirdActivity</string>
     <string name="start_fifth_activity">Start FifthActivity</string>
+    <string name="start_sixth_activity">Start SixthActivity</string>
 </resources>

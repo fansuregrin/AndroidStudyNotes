@@ -74,4 +74,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/button_12"
         android:text="@string/start_fifth_activity" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_13"
+        android:text="@string/start_sixth_activity" />
 </LinearLayout>
