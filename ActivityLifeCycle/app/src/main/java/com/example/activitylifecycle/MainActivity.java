@@ -14,12 +14,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // 启动 NormalActivity
         Button startNormalActivity = findViewById(R.id.start_normal_activity);
         startNormalActivity.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, NormalActivity.class);
             startActivity(intent);
         });
 
+        // 启动 DialogActivity
         Button startDialogActivity = findViewById(R.id.start_dialog_activity);
         startDialogActivity.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, DialogActivity.class);
@@ -57,5 +59,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.d(TAG, "onDestroy");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d(TAG, "onRestart");
     }
 }
