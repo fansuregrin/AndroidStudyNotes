@@ -25,4 +25,5 @@
     <string name="third_activity">活动三</string>
     <string name="start_first_activity">启动活动一</string>
     <string name="start_second_activity">启动活动二</string>
+    <string name="start_third_activity">启动活动三</string>
 </resources>

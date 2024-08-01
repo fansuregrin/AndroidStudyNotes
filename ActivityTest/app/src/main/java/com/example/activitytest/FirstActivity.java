@@ -107,6 +107,12 @@ public class FirstActivity extends AppCompatActivity {
             Intent intent = new Intent(FirstActivity.this, FirstActivity.class);
             startActivity(intent);
         });
+
+        Button button11 = findViewById(R.id.button_11);
+        button11.setOnClickListener(v -> {
+            Intent intent = new Intent(FirstActivity.this, ThirdActivity.class);
+            startActivity(intent);
+        });
     }
 
     @Override
