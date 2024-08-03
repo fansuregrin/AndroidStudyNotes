@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">UIExploring</string>
+    <string name="text_view">This is TextView</string>
+    <string name="button_1">Button 1</string>
+    <string name="button_2">Button 2</string>
+    <string name="button_3">Button 3</string>
+    <string name="button_4">Button 4</string>
+    <string name="text_hint">Type something here</string>
+    <string name="img_1_desc">A bird sitting on a boat</string>
+    <string name="show">Show</string>
+    <string name="hide">Hide</string>
+    <string name="increase">Increase</string>
+    <string name="decrease">Decrease</string>
+    <string name="alert_dialog">Alert Dialog</string>
+    <string name="alert_title">This is a dialog</string>
+    <string name="alert_msg">This is extreme important! Are you sure?</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+</resources>
