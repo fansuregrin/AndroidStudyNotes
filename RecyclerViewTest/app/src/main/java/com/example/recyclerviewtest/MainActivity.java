@@ -16,5 +16,10 @@ public class MainActivity extends AppCompatActivity {
         btnRecyclerViewVertical.setOnClickListener(v -> {
             RecyclerViewVerticalActivity.actionStart(this);
         });
+
+        Button btnRecyclerViewHorizontal = findViewById(R.id.btn_recycler_view_horizontal);
+        btnRecyclerViewHorizontal.setOnClickListener(v -> {
+            RecyclerViewHorizontalActivity.actionStart(this);
+        });
     }
 }

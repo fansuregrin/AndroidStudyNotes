@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">测试 RecyclerView</string>
     <string name="recycler_view_vertical">RecyclerView 纵向滚动</string>
+    <string name="recycler_view_horizontal">RecyclerView 横向滚动</string>
     <string name="apple">苹果</string>
     <string name="banana">香蕉</string>
     <string name="orange">橙子</string>

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">RecyclerViewTest</string>
     <string name="recycler_view_vertical">Recycler View Vertical</string>
+    <string name="recycler_view_horizontal">Recycler View Horizontal</string>
     <string name="apple">Apple</string>
     <string name="banana">Banana</string>
     <string name="orange">Orange</string>
