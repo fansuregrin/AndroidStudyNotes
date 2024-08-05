@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">UILayoutTest</string>
+    <string name="linear_layout">Linear Layout</string>
+    <string name="layout_weight">Layout Weight</string>
+    <string name="relative_layout">Relative Layout</string>
+    <string name="relative_layout_2">Relative Layout 2</string>
+    <string name="frame_layout">Frame Layout</string>
+    <string name="constraint_layout">Constraint Layout</string>
+    <string name="include_layout">Include Layout</string>
+    <string name="custom_layout">Custom Layout</string>
+    <string name="list_view">List View</string>
+    <string name="button_1">Button 1</string>
+    <string name="button_2">Button 2</string>
+    <string name="button_3">Button 3</string>
+    <string name="button_4">Button 4</string>
+    <string name="button_5">Button 5</string>
+    <string name="hint">Type something here</string>
+    <string name="send">Send</string>
+    <string name="text_view">This is TextView</string>
+    <string name="icon">This is the icon</string>
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tristique eros. Aliquam sit amet venenatis felis. Phasellus risus sem, tempor eu odio vel, rhoncus vestibulum ante. Nam semper quis sapien eget gravida. Mauris fringilla mauris dui, vel placerat lectus maximus non. Cras sodales est eget sapien lacinia, vel sollicitudin enim iaculis. Praesent dapibus at nunc ac tincidunt. Praesent sed nunc nisi. Curabitur luctus sapien vitae arcu tempus, ut viverra tellus malesuada.\n
+        Maecenas dolor quam, tincidunt sed nibh et, porta fermentum elit. Donec vulputate finibus mollis. Quisque ac ante dignissim, pretium enim a, tempus lacus. Donec quis quam magna. Nullam gravida lacinia pellentesque. Suspendisse gravida nisi nec tellus cursus, ut scelerisque ante volutpat. Mauris nec neque massa. Sed ac consequat arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n
+        Suspendisse posuere iaculis arcu eu malesuada. Maecenas ultricies id turpis a cursus. Praesent id nibh et nisi pulvinar vestibulum. Nunc tristique libero nec mauris consequat tincidunt. In vel finibus turpis. In ultrices tempus nisi, sed bibendum nisi mattis vitae. Vivamus facilisis, nunc eu cursus lacinia, metus nulla aliquet elit, eget fringilla risus dui a enim.
+    </string>
+    <string name="back">Back</string>
+    <string name="edit">Edit</string>
+    <string name="title">Title</string>
+    <string name="click_edit_btn">You Clicked Edit Button</string>
+    <string name="apple">Apple</string>
+    <string name="banana">Banana</string>
+    <string name="orange">Orange</string>
+    <string name="watermelon">Watermelon</string>
+    <string name="pear">Pear</string>
+    <string name="grape">Grape</string>
+    <string name="pineapple">Pineapple</string>
+    <string name="strawberry">Strawberry</string>
+    <string name="cherry">Cherry</string>
+    <string name="mango">Mango</string>
+    <string name="mandarin">Mandarin</string>
+    <string name="peach">Peach</string>
+    <string name="loquat">Loquat</string>
+    <string name="hawthorn">Hawthorn</string>
+    <string name="kiwi_fruit">Kiwi_fruit</string>
+    <string name="lychee">Lychee</string>
+    <string name="blueberry">Blueberry</string>
+    <string name="pitaya">Pitaya</string>
+    <string name="hami_melon">Hami_melon</string>
+    <string name="longan">Longan</string>
+    <string name="mangosteen">Mangosteen</string>
+</resources>
