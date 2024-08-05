@@ -22,7 +22,7 @@ public class RecyclerViewVerticalActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.recycler_view_vertical);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        FruitAdapter adapter = new FruitAdapter(fruitList);
+        FruitAdapter adapter = new FruitAdapter(fruitList, R.layout.fruit_item_horizontal);
         recyclerView.setAdapter(adapter);
 
         recyclerView.addOnItemTouchListener(new RecyclerView.SimpleOnItemTouchListener());

@@ -24,16 +24,18 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder> 
     }
 
     private final List<Fruit> mFruitList;
+    private final int mFruitItemLayout;
 
-    public FruitAdapter(List<Fruit> fruitList) {
+    public FruitAdapter(List<Fruit> fruitList, int fruitItemLayout) {
         mFruitList = fruitList;
+        mFruitItemLayout = fruitItemLayout;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-            .inflate(R.layout.fruit_item, parent, false);
+            .inflate(mFruitItemLayout, parent, false);
         return new ViewHolder(view);
     }
 
