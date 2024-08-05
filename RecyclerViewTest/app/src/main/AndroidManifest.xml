@@ -13,6 +13,10 @@
         android:theme="@style/Theme.RecyclerViewTest"
         tools:targetApi="31">
         <activity
+            android:name=".RecyclerViewGridActivity"
+            android:exported="false"
+            android:label="@string/recycler_view_grid" />
+        <activity
             android:name=".RecyclerViewHorizontalActivity"
             android:exported="false"
             android:label="@string/recycler_view_horizontal" />

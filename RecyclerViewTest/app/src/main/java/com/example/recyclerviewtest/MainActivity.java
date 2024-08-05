@@ -21,5 +21,10 @@ public class MainActivity extends AppCompatActivity {
         btnRecyclerViewHorizontal.setOnClickListener(v -> {
             RecyclerViewHorizontalActivity.actionStart(this);
         });
+
+        Button btnRecyclerViewGrid = findViewById(R.id.btn_recycler_view_grid);
+        btnRecyclerViewGrid.setOnClickListener(v -> {
+            RecyclerViewGridActivity.actionStart(this);
+        });
     }
 }
