@@ -3,6 +3,7 @@
     <string name="recycler_view_vertical">Recycler View Vertical</string>
     <string name="recycler_view_horizontal">Recycler View Horizontal</string>
     <string name="recycler_view_grid">Recycler View Grid</string>
+    <string name="recycler_view_staggered_grid">Recycler View Staggered Grid</string>
     <string name="apple">Apple</string>
     <string name="banana">Banana</string>
     <string name="orange">Orange</string>
@@ -24,4 +25,14 @@
     <string name="hami_melon">Hami_melon</string>
     <string name="longan">Longan</string>
     <string name="mangosteen">Mangosteen</string>
+    <string name="pikachu">Pikachu</string>
+    <string name="pkiachu_desc">Pikachu is a short, chubby rodent Pokémon. It is covered in yellow fur with two horizontal brown stripes on its back. It has a small mouth, long, pointed ears with black tips, and brown eyes. Each cheek is a red circle that contains a pouch for electricity storage. It has short forearms with five fingers on each paw, and its feet each have three toes. At the base of its lightning bolt-shaped tail is a patch of brown fur. A female will have a V-shaped notch at the end of its tail, which looks like the top of a heart. It is classified as a quadruped, but it has been known to stand and walk on its hind legs; therefore, Pikachu is a facultative biped.</string>
+    <string name="bulbasaur">Bulbasaur</string>
+    <string name="bulbasaur_desc">Bulbasaur is a small, quadrupedal amphibian Pokémon that has blue-green skin with darker patches. It has red eyes with white pupils, pointed, ear-like structures on top of its head, and a short, blunt snout with a wide mouth. Small, pointed teeth are visible in the upper jaw when its mouth is open. Each of its thick legs ends with three sharp claws. On Bulbasaur\'s back is a green plant bulb that conceals two slender, tentacle-like vines, which is grown from a seed planted there at birth. The bulb also provides it with energy through photosynthesis and from the nutrient-rich seeds contained within.</string>
+    <string name="meowth">Meowth</string>
+    <string name="meowth_desc">Meowth is a small, feline Pokémon with cream-colored fur that turns brown at the tips of its hind paws and tail. Its ovoid head features four prominent whiskers, wide eyes with slit pupils, two pointed teeth in the upper jaw, and a gold koban coin embedded in its forehead. Its ears are black with brown interiors and are flanked with an additional pair of long whiskers. Meowth is a quadruped with the ability to walk on its hind legs; while the games almost always depict Meowth on two legs, the anime states that Meowth normally walks on all fours. It can freely manipulate its claws, retracting them when it wants to move silently. The tip of its tail curls tightly.</string>
+    <string name="psyduck">Psyduck</string>
+    <string name="psyduck_desc">Psyduck is a yellow Pokémon resembling a duck or a bipedal platypus. On top of its head are three thick strands of black hair, and it has a wide, flat cream-colored beak. Psyduck\'s eyes seem vacant and have tiny pupils. Its legs and tail are stubby, and it has cream-colored webbed feet. There are three claws on each of its <hands class=""></hands></string>
+    <string name="squirtle">Squirtle</string>
+    <string name="squirtle_desc">Squirtle is a small reptilian Pokémon that resembles a light-blue turtle. While it typically walks on its two short legs, it has been shown to run on all fours in Super Smash Bros. Brawl. It has large, purplish, or reddish eyes and a slightly hooked upper lip. Each of its hands and feet has three pointed digits. The end of its long, squirrel-like tail curls inward. Its body is encased by a tough shell that forms and hardens after birth. This shell is brown on the top, pale yellow on the bottom, and has a thick white ridge between the two halves.</string>
 </resources>

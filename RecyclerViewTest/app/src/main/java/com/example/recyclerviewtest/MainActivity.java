@@ -26,5 +26,10 @@ public class MainActivity extends AppCompatActivity {
         btnRecyclerViewGrid.setOnClickListener(v -> {
             RecyclerViewGridActivity.actionStart(this);
         });
+
+        Button btnRecyclerViewStaggeredGrid = findViewById(R.id.btn_recycler_view_staggered_grid);
+        btnRecyclerViewStaggeredGrid.setOnClickListener(v -> {
+            RecyclerViewStaggeredGridActivity.actionStart(this);
+        });
     }
 }

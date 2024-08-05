@@ -4,6 +4,7 @@
     <string name="recycler_view_vertical">RecyclerView 纵向滚动</string>
     <string name="recycler_view_horizontal">RecyclerView 横向滚动</string>
     <string name="recycler_view_grid">RecyclerView 网格</string>
+    <string name="recycler_view_staggered_grid">RecyclerView 瀑布流</string>
     <string name="apple">苹果</string>
     <string name="banana">香蕉</string>
     <string name="orange">橙子</string>
@@ -25,4 +26,14 @@
     <string name="hami_melon">哈密瓜</string>
     <string name="longan">龙眼</string>
     <string name="mangosteen">山竹</string>
+    <string name="pikachu">皮卡丘</string>
+    <string name="bulbasaur">妙蛙种子</string>
+    <string name="meowth">喵喵</string>
+    <string name="psyduck">可达鸭</string>
+    <string name="squirtle">杰尼龟</string>
+    <string name="pkiachu_desc">皮卡丘是一只电气鼠，全身的皮毛都是黄色的，背上有两条褐色的条纹，尾巴是像锯齿状的闪电，与身体相接的部分也有一片褐色的皮毛。它有小小的嘴巴，以及黑色的眼睛，脸颊上有着红色的电力袋，长长的耳朵尖端是黑色的。它的前爪短而粗，有五趾，后爪则只有三趾。越是能制造出强大电流的皮卡丘，脸颊上的囊就越柔软，同时也越有伸展性。由于它脸颊上的袋子中储存了电能，触摸了之后会觉得麻麻的。它跑动的时候是用四条腿着地快速地奔跑，但是更多时候它是站立着的并用两只后脚走路。雌性皮卡丘的尾巴末端为心形，而雄性的则没有缺口。不同地区的皮卡丘在皮毛光泽上有细微差异。关都地区的皮卡丘在阳光下有星星点点的细小光斑，而阿罗拉地区的皮卡丘则皮毛润泽。</string>
+    <string name="bulbasaur_desc">妙蛙种子是一种四足的宝可梦，外表类似蟾蜍。它有着鲜红色的眼睛，白色的瞳孔和巩膜，头顶上长着一对凸起的耳朵。它的鼻子短而钝，且有一张大嘴。当它的嘴巴张开时，可以看到上颚的一对小而尖的牙齿。它的皮肤呈蓝绿色，并附有深绿色的斑纹。它每条粗腿的脚掌上都分出三趾，且末端都长有白色的小爪子。据说在它出生的时候，背上就种有一个会和它身体一同成长的神奇种子。</string>
+    <string name="meowth_desc">喵喵有着类似猫科动物的外观，与体型小的家猫有着相似的特征。大多数的喵喵都是靠四足行走，然而一些却会凭两只脚的力量行走。它有着浅黄的毛发，而在尾巴尾端和后爪开始变成褐色。它那椭圆形的脸蛋与四个突出的猫须连接一起、无鼻孔、黑与褐的一双耳朵、一个闪闪发亮的椭圆金币贴在额头上。阿罗拉喵喵全身都是灰色，除了耳朵、脚的前半部分和尾巴的一部分是白色的，眼睛也变为半睁，脸上的胡子也变得有些弯曲。伽勒尔喵喵则体毛茂盛，通体为深褐色，眼睛为黄色，瞳孔为白色，后爪、耳朵、头上的金币和尾巴均为黑色，表面看像是咧嘴露出尖牙的样子。它的下巴非常大，甚至直接盖住自己的胸部，而下巴也长满了密密麻麻的毛发。</string>
+    <string name="psyduck_desc">可达鸭的身体是黄色的，它的眼睛里有极小的瞳孔。它的嘴巴是扁状的，头上有三条黑色的呆毛，四肢短壮，酷似河童。它有短小的尾巴和有蹼的脚掌。</string>
+    <string name="squirtle_desc">杰尼龟有一双紫红色的大眼睛，四肢均为三趾，尾巴呈小型波浪状。杰尼龟的身体呈浅蓝色，被坚硬的龟壳包裹，龟壳背部为褐色，腹部为浅黄色，两者之间有着白色的波浪型边缘。</string>
 </resources>
