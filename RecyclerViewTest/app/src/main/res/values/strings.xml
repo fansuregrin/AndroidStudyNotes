@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">RecyclerViewTest</string>
+    <string name="apple">Apple</string>
+    <string name="banana">Banana</string>
+    <string name="orange">Orange</string>
+    <string name="watermelon">Watermelon</string>
+    <string name="pear">Pear</string>
+    <string name="grape">Grape</string>
+    <string name="pineapple">Pineapple</string>
+    <string name="strawberry">Strawberry</string>
+    <string name="cherry">Cherry</string>
+    <string name="mango">Mango</string>
+    <string name="mandarin">Mandarin</string>
+    <string name="peach">Peach</string>
+    <string name="loquat">Loquat</string>
+    <string name="hawthorn">Hawthorn</string>
+    <string name="kiwi_fruit">Kiwi_fruit</string>
+    <string name="lychee">Lychee</string>
+    <string name="blueberry">Blueberry</string>
+    <string name="pitaya">Pitaya</string>
+    <string name="hami_melon">Hami_melon</string>
+    <string name="longan">Longan</string>
+    <string name="mangosteen">Mangosteen</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">测试 RecyclerView</string>
+    <string name="apple">苹果</string>
+    <string name="banana">香蕉</string>
+    <string name="orange">橙子</string>
+    <string name="watermelon">西瓜</string>
+    <string name="pear">梨子</string>
+    <string name="grape">葡萄</string>
+    <string name="pineapple">菠萝</string>
+    <string name="strawberry">草莓</string>
+    <string name="cherry">樱桃</string>
+    <string name="mango">芒果</string>
+    <string name="mandarin">柑橘</string>
+    <string name="peach">桃子</string>
+    <string name="loquat">枇杷</string>
+    <string name="hawthorn">山楂</string>
+    <string name="kiwi_fruit">猕猴桃</string>
+    <string name="lychee">荔枝</string>
+    <string name="blueberry">蓝莓</string>
+    <string name="pitaya">火龙果</string>
+    <string name="hami_melon">哈密瓜</string>
+    <string name="longan">龙眼</string>
+    <string name="mangosteen">山竹</string>
+</resources>
