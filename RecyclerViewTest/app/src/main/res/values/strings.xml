@@ -4,6 +4,8 @@
     <string name="recycler_view_horizontal">Recycler View Horizontal</string>
     <string name="recycler_view_grid">Recycler View Grid</string>
     <string name="recycler_view_staggered_grid">Recycler View Staggered Grid</string>
+    <string name="click_view">You clicked view </string>
+    <string name="click_image">You clicked image </string>
     <string name="apple">Apple</string>
     <string name="banana">Banana</string>
     <string name="orange">Orange</string>

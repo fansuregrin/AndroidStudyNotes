@@ -5,6 +5,8 @@
     <string name="recycler_view_horizontal">RecyclerView 横向滚动</string>
     <string name="recycler_view_grid">RecyclerView 网格</string>
     <string name="recycler_view_staggered_grid">RecyclerView 瀑布流</string>
+    <string name="click_view">您点击了视图</string>
+    <string name="click_image">您点击了图像</string>
     <string name="apple">苹果</string>
     <string name="banana">香蕉</string>
     <string name="orange">橙子</string>
