@@ -13,6 +13,22 @@
         android:theme="@style/Theme.UIExploring"
         tools:targetApi="31">
         <activity
+            android:name=".ProgressBarActivity"
+            android:exported="false"
+            android:label="@string/progress_bar" />
+        <activity
+            android:name=".ImageViewActivity"
+            android:exported="false"
+            android:label="@string/image_view" />
+        <activity
+            android:name=".EditTextActivity"
+            android:exported="false"
+            android:label="@string/edit_text" />
+        <activity
+            android:name=".TextViewActivity"
+            android:exported="false"
+            android:label="@string/text_view" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

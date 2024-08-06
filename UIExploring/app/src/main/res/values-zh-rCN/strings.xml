@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">探索UI</string>
-    <string name="text_view">这是 TextView</string>
     <string name="button_1">按钮一</string>
     <string name="text_hint">嘿嘿，输入点什么吧</string>
     <string name="img_1_desc">一只鸟坐在船上</string>
-    <string name="button_2">按钮二</string>
-    <string name="button_3">按钮三</string>
-    <string name="button_4">按钮四</string>
+    <string name="change_pic">切换图片</string>
     <string name="show">显示</string>
     <string name="hide">隐藏</string>
     <string name="increase">增加</string>
@@ -17,5 +14,15 @@
     <string name="alert_msg">这是很重要的事情，您确定吗？</string>
     <string name="ok">确定</string>
     <string name="cancel">取消</string>
-    <string name="progress_dialog">进度对话框</string>
+    <string name="text_view_content">
+        欠吉方：土尤兆英發元，心手會旦冬爪爪校我亮，每看能香。科姐白？條口秋乾知尾，爸士收你包乾聲視？尺游穴信弟視棵幼頁丟有，貝幾久哭快固親記高掃，京課卜着，爬升不。\n
+        向個雄杯幫手家這手羊杯到手，蝶朵掃告荷成面；亭下星馬氣更昌乞方乍竹手，加山占寸，杯又色姊玩乙免功丟眼至重來夏根校間哥：動眼牛哪行？寺就元長封。\n
+        開世陽追幫，亮間由蝶吉喜玩得口鴨，戊苦夏麼裏呢，蝴們它汗几犬壯頭親祖祖畫；回院新成燈姐下事院丁跑村布杯免？收飽戶幾爸丟高半貫五娘。\n
+        根借會片飽雨科成，收彩像呀看食，着鼻帶姐了尾連。回年哭波筆念畫寫！身色蝴每汁長登每老北夏巴內固；牙息清且出登魚未節河，世借千會皮嗎信荷壯白都日孝經「親呢枝法棵」頭風河布國道老象會直信耳。\n
+        美固山飛下助光你話四刀細河位、胡黑直里干花四犬更消寫田得直力斥長間？法主彩子由只訴；植由住從教，假我夏斥百草很還聽各品抓因吧！筆忍至兌世氣辛尼道「跑聽兩平足神」就個耳者拉免，用停你息幸耍穴看種。\n
+        給朵皮幫記有什十歌躲怕音品胡頭沒豆，借抱口棵見彩麼。跟面請加姐，采幫夏，申呀半裝尤肉錯夏壯，那雨兌筆才實海元公：水教丁了叫色菜，蝶綠錯元停人良波，別人抄了爪常、綠主哪象動夕起連；許青良結里。</string>
+    <string name="text_view">文本视图</string>
+    <string name="edit_text">可编辑文字</string>
+    <string name="image_view">图像视图</string>
+    <string name="progress_bar">进度条</string>
 </resources>
