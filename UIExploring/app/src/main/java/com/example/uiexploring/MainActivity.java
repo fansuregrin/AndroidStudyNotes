@@ -48,5 +48,10 @@ public class MainActivity extends AppCompatActivity {
                 alertDialog.show();
             }
         });
+
+        Button btnButton = findViewById(R.id.btn_button);
+        btnButton.setOnClickListener(v -> {
+            ButtonActivity.actionStart(this);
+        });
     }
 }

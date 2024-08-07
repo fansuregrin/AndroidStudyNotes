@@ -4,8 +4,10 @@
     <string name="edit_text">EditText</string>
     <string name="image_view">ImageView</string>
     <string name="progress_bar">ProgressBar</string>
+    <string name="button">Button</string>
     <string name="text_view_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id faucibus ligula, eget pulvinar metus. Cras id leo enim. In vehicula tempus lectus scelerisque aliquet. Curabitur id arcu ac ipsum molestie viverra. Cras ut est et felis tristique varius. Etiam varius neque a enim elementum maximus. Curabitur euismod lacus luctus massa ultricies fringilla. Fusce ut risus dolor. Curabitur vehicula aliquet nisi nec vestibulum. Nam pulvinar quam erat, vel congue libero scelerisque sed. Nunc non lacus vitae mi fermentum euismod. Vivamus suscipit ullamcorper nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\nSed hendrerit ultricies luctus. In eget risus suscipit, pharetra neque quis, accumsan tortor. Curabitur non vehicula lectus. Quisque aliquet porta nisl, vitae pulvinar justo sagittis ut. Nullam mi nisi, posuere vitae diam eu, commodo sollicitudin elit. Duis et orci at urna hendrerit fermentum non quis diam. Nam eget iaculis lorem, id semper orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi quis nibh nisi. Sed justo ipsum, tempor in consequat vel, malesuada vitae felis. Donec consectetur cursus dapibus. Nullam suscipit purus ut efficitur suscipit. Sed quis eleifend ex.</string>
     <string name="button_1">Button 1</string>
+    <string name="button_text">I\'m a button</string>
     <string name="change_pic">Change Picture</string>
     <string name="text_hint">Type something here</string>
     <string name="img_1_desc">A bird sitting on a boat</string>
@@ -18,4 +20,5 @@
     <string name="alert_msg">This is extreme important! Are you sure?</string>
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
+    <string name="android_icon_desc">A tiny android icon</string>
 </resources>

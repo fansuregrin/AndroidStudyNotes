@@ -44,4 +44,12 @@
         android:text="@string/alert_dialog"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/btn_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/button"
+        android:textAllCaps="false" />
+
 </LinearLayout>
