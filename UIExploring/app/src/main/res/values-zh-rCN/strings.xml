@@ -28,4 +28,8 @@
     <string name="button_text">我是一个按钮</string>
     <string name="button">按钮</string>
     <string name="android_icon_desc">一个迷你的安卓图标</string>
+    <string name="hint_phone">请输入电话号码</string>
+    <string name="hint_email_addr">请输入电子邮箱地址</string>
+    <string name="hint_text_password">请输入您的文本密码</string>
+    <string name="hint_number_password">请输入您的数字密码</string>
 </resources>

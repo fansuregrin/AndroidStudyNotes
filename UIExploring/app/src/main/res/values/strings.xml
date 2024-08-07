@@ -21,4 +21,8 @@
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
     <string name="android_icon_desc">A tiny android icon</string>
+    <string name="hint_phone">Type phone number here</string>
+    <string name="hint_email_addr">Type email address here</string>
+    <string name="hint_text_password">Type your text password here</string>
+    <string name="hint_number_password">Type your number password here</string>
 </resources>
