@@ -38,13 +38,39 @@
         android:autofillHints="password" />
 
     <EditText
-        android:id="@+id/edit_text"
+        android:id="@+id/edit_text_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/hint_number"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/edit_text_multiline"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:hint="@string/text_hint"
         android:inputType="textMultiLine"
         android:maxLines="2"/>
+
+    <EditText
+        android:id="@+id/edit_text_cap_sentences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine|textAutoCorrect|textCapSentences"
+        android:hint="@string/text_hint"
+        android:autofillHints=""
+        android:maxLines="3" />
+
+    <EditText
+        android:id="@+id/edit_text_action_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/hint_action_send"
+        android:imeOptions="actionSend"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/button_1"

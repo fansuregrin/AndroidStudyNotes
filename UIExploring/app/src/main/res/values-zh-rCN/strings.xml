@@ -32,4 +32,7 @@
     <string name="hint_email_addr">请输入电子邮箱地址</string>
     <string name="hint_text_password">请输入您的文本密码</string>
     <string name="hint_number_password">请输入您的数字密码</string>
+    <string name="hint_number">请输入数字</string>
+    <string name="hint_action_send">输入点什么并发送</string>
+    <string name="send_prompt">正在发送：</string>
 </resources>

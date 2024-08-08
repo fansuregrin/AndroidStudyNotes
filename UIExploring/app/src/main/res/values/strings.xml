@@ -25,4 +25,7 @@
     <string name="hint_email_addr">Type email address here</string>
     <string name="hint_text_password">Type your text password here</string>
     <string name="hint_number_password">Type your number password here</string>
+    <string name="hint_number">Type number here</string>
+    <string name="hint_action_send">Type something and send it</string>
+    <string name="send_prompt">Sending: </string>
 </resources>
