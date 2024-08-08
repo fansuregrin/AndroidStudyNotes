@@ -24,8 +24,13 @@
             android:launchMode="singleInstance" />
         <activity
             android:name=".FourthActivity"
-            android:exported="false"
-            android:label="@string/fourth_activity" />
+            android:exported="true"
+            android:label="@string/fourth_activity">
+            <intent-filter>
+                <action android:name="com.example.activitytest.ACTION_START" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".TargetActivity"
             android:exported="false"

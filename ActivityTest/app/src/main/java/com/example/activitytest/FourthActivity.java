@@ -15,7 +15,8 @@ public class FourthActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String data = intent.getStringExtra("extra_data");
-        assert data != null;
-        Log.d(TAG, data);
+        if (data != null) {
+            Log.d(TAG, data);
+        }
     }
 }
