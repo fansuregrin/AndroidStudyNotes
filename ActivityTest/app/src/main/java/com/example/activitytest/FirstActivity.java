@@ -3,6 +3,7 @@ package com.example.activitytest;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Process;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,6 +24,8 @@ public class FirstActivity extends AppCompatActivity {
         setContentView(R.layout.first_layout);
 
         Log.d(TAG, "Task id is " + getTaskId());
+        Log.d(TAG, "Process id " + Process.myPid());
+        Log.d(TAG, "Thread id is " + Process.myTid());
 
         // 使用 Toast
         Button button1 = findViewById(R.id.button_1);
