@@ -9,6 +9,7 @@
     <string name="include_layout">Include Layout</string>
     <string name="custom_layout">Custom Layout</string>
     <string name="list_view">List View</string>
+    <string name="chain">Chain</string>
     <string name="button_1">Button 1</string>
     <string name="button_2">Button 2</string>
     <string name="button_3">Button 3</string>
@@ -48,4 +49,5 @@
     <string name="hami_melon">Hami_melon</string>
     <string name="longan">Longan</string>
     <string name="mangosteen">Mangosteen</string>
+    <string name="hint_text">Type something here</string>
 </resources>

@@ -56,5 +56,10 @@ public class MainActivity extends AppCompatActivity {
         btnListView.setOnClickListener(v -> {
             ListViewActivity.actionStart(this);
         });
+
+        Button btnChain = findViewById(R.id.btn_chain);
+        btnChain.setOnClickListener(v -> {
+            ChainActivity.actionStart(this);
+        });
     }
 }

@@ -6,6 +6,7 @@
     <string name="relative_layout_2">相对布局二</string>
     <string name="include_layout">引入布局</string>
     <string name="list_view">列表视图</string>
+    <string name="chain">链</string>
     <string name="button_1">按钮一</string>
     <string name="button_2">按钮二</string>
     <string name="button_3">按钮三</string>
@@ -45,4 +46,5 @@
     <string name="hami_melon">哈密瓜</string>
     <string name="longan">龙眼</string>
     <string name="mangosteen">山竹</string>
+    <string name="hint_text">请输入点什么</string>
 </resources>
