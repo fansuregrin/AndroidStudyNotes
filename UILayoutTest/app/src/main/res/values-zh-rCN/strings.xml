@@ -47,4 +47,5 @@
     <string name="longan">龙眼</string>
     <string name="mangosteen">山竹</string>
     <string name="hint_text">请输入点什么</string>
+    <string name="ok">确认</string>
 </resources>
