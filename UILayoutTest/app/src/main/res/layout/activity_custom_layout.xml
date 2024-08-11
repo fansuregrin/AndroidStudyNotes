@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <com.example.uilayouttest.TitleLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/title_layout"
+        app:title="@string/custom_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:autofillHints=""
+        android:enabled="false"
+        android:hint="@string/hint_text"
+        android:inputType="textMultiLine"
+        android:maxLines="15"
+        android:text="@string/lorem_ipsum"
+        android:textColor="@color/material_dynamic_neutral0"
+        android:textSize="16sp" />
     
 </LinearLayout>
