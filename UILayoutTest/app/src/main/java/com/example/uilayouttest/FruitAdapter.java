@@ -17,9 +17,9 @@ import java.util.List;
 public class FruitAdapter extends ArrayAdapter<Fruit> {
     private final int resourceId;
 
-    public FruitAdapter(Context context, int textViewResourceId, List<Fruit> objects) {
-        super(context, textViewResourceId, objects);
-        resourceId = textViewResourceId;
+    public FruitAdapter(Context context, int resource, List<Fruit> objects) {
+        super(context, resource, objects);
+        resourceId = resource;
     }
 
     @NotNull
