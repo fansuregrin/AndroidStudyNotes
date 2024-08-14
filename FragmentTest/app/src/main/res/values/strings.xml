@@ -2,5 +2,6 @@
     <string name="app_name">FragmentTest</string>
     <string name="button">Button</string>
     <string name="lipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="text">As the sun sets gracefully over the horizon, the sky is painted with hues of orange and pink, creating a serene atmosphere. Children play joyfully in the park, their laughter echoing through the air, while adults stroll leisurely, enjoying the cool evening breeze. The day\'s worries seem to fade away with the departing light, replaced by a sense of tranquility and peace.</string>
     <string name="fragment_first_look">Fragment, a First Look</string>
 </resources>

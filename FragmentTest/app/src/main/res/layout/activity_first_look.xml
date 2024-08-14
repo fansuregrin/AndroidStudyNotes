@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal">
 
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/left_fragment"
         android:name="com.example.fragmenttest.LeftFragment"
         android:layout_width="0dp"
@@ -12,7 +12,7 @@
         android:layout_weight="1" />
 
 
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/right_fragment"
         android:name="com.example.fragmenttest.RightFragment"
         android:layout_width="0dp"

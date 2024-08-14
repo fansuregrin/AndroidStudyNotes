@@ -3,5 +3,6 @@
     <string name="app_name">FragmentTest</string>
     <string name="button">按钮</string>
     <string name="lipsum">春天的微风轻拂过翠绿的柳树，带来了温暖的气息和新生的希望。在这个季节里，万物复苏，花儿竞相开放，小鸟在枝头欢快地歌唱。人们脱去了厚重的冬装，换上了轻便的春装，脸上洋溢着愉悦的笑容，享受着大自然的恩赐。孩子们在公园里奔跑嬉戏，老人们在长椅上悠闲地聊天，一片和谐美好的景象。</string>
+    <string name="text">当太阳优雅地在地平线上落下，天空被橙色和粉红色的色调所描绘，营造出一种宁静的氛围。孩子们在公园里欢快地玩耍，他们的笑声在空中回荡，而成人们则悠闲地散步，享受着凉爽的晚风。白天的烦恼似乎随着离去的光芒消失了，取而代之的是一种宁静与和平的感觉。</string>
     <string name="fragment_first_look">碎片初探</string>
 </resources>
