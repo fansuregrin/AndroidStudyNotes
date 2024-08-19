@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">测试安卓线程</string>
+    <string name="change_text">更改文字</string>
+    <string name="hello">你好世界</string>
+    <string name="greet">很高兴认识你</string>
+</resources>
