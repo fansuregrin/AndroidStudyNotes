@@ -5,12 +5,15 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    private static final String TAG = "MainActivity";
+
     private MyService.DownloadBinder downloadBinder;
 
     private ServiceConnection connection = new ServiceConnection() {
@@ -42,6 +45,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button btnUnbindService = findViewById(R.id.btn_unbind_service);
         btnUnbindService.setOnClickListener(this);
+
+        Button btnStartForegroundService = findViewById(R.id.btn_start_foreground_service);
+        btnStartForegroundService.setOnClickListener(this);
+
+        Button btnStartIntentService = findViewById(R.id.btn_start_intent_service);
+        btnStartIntentService.setOnClickListener(this);
     }
 
     @Override
@@ -58,6 +67,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             bindService(bindIntent, connection, BIND_AUTO_CREATE);
         } else if (id == R.id.btn_unbind_service) {
             unbindService(connection);
+        } else if (id == R.id.btn_start_foreground_service) {
+            Intent intent = new Intent(this, MyService2.class);
+            startForegroundService(intent);
+        } else if (id == R.id.btn_start_intent_service) {
+            Log.d(TAG, "onClick: thread id is " + Thread.currentThread().getId());
+            Intent intent = new Intent(this, MyIntentService.class);
+            startService(intent);
         }
     }
 }
