@@ -12,24 +12,31 @@ import android.os.IBinder;
 import androidx.core.app.NotificationCompat;
 
 public class MyService2 extends Service {
+    private final String CHANNEL_ID = "com.example.servicetest";
+
     public MyService2() {
     }
 
     @Override
     public void onCreate() {
         super.onCreate();
-        String id = "com.example.servicetest";
-        String name = "Channel One";
-        NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-        NotificationChannel channel = new NotificationChannel(id, name, NotificationManager.IMPORTANCE_HIGH);
+        // 创建一个通知 Channel
+        String name = getString(R.string.channel_name);
+        NotificationManager notificationManager = getSystemService(NotificationManager.class);
+        NotificationChannel channel = new NotificationChannel(CHANNEL_ID, name, NotificationManager.IMPORTANCE_HIGH);
         notificationManager.createNotificationChannel(channel);
-        Notification notification = new NotificationCompat.Builder(this, id)
-                .setContentTitle("This is content title")
-                .setContentText("This is content text")
-                .setSmallIcon(R.mipmap.ic_launcher)
-                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
-                .build();
+    }
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        Notification notification = new NotificationCompat.Builder(this, CHANNEL_ID)
+            .setContentTitle(getString(R.string.app_name))
+            .setContentText(getString(R.string.foreground_service))
+            .setSmallIcon(R.mipmap.ic_launcher)
+            .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
+            .build();
         startForeground(1, notification, ServiceInfo.FOREGROUND_SERVICE_TYPE_SPECIAL_USE);
+        return super.onStartCommand(intent, flags, startId);
     }
 
     @Override

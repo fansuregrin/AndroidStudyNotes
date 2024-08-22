@@ -7,4 +7,6 @@
     <string name="unbind_service">解绑服务</string>
     <string name="start_foreground_service">启动前台服务</string>
     <string name="start_intent_service">启动 IntentService</string>
+    <string name="channel_name">测试渠道一</string>
+    <string name="foreground_service">应用正在前台执行任务......</string>
 </resources>
