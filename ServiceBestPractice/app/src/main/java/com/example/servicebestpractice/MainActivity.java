@@ -46,10 +46,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bindService(intent, connection, BIND_AUTO_CREATE);
 
         if (ContextCompat.checkSelfPermission(
-            MainActivity.this, Manifest.permission.POST_NOTIFICATIONS)
-            != PackageManager.PERMISSION_GRANTED) {
+            this, Manifest.permission.POST_NOTIFICATIONS)
+            != PackageManager.PERMISSION_GRANTED ||
+            ContextCompat.checkSelfPermission(this, Manifest.permission.INTERNET)
+            != PackageManager.PERMISSION_GRANTED ) {
             ActivityCompat.requestPermissions(MainActivity.this, new
-                String[] {Manifest.permission.POST_NOTIFICATIONS}, 1);
+                String[] {Manifest.permission.POST_NOTIFICATIONS, Manifest.permission.INTERNET}, 1);
         }
     }
 
@@ -72,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         int id = v.getId();
         if (id == R.id.btn_start_download) {
-            String url = "https://pan.fansuregrin.top/d/Pictures/Wallpapers/windows-pink.jpg";
+            String url = "https://www.baidu.com/img/flexible/logo/pc/index.png";
             downloadBinder.startDownload(url);
         } else if (id == R.id.btn_pause_download) {
             downloadBinder.pauseDownload();
