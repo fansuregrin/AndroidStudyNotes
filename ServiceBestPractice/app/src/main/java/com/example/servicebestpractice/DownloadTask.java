@@ -24,7 +24,7 @@ public class DownloadTask extends AsyncTask<String, Integer, Integer> {
     private DownloadListener listener;
     private boolean isCanceled = false;
     private boolean isPaused = false;
-    private int lastProgress;
+    private int lastProgress = -1;
 
     public DownloadTask(DownloadListener listener) {
         this.listener = listener;
@@ -73,7 +73,7 @@ public class DownloadTask extends AsyncTask<String, Integer, Integer> {
                     } else {
                         total += len;
                         savedFile.write(buf, 0, len);
-                        int progress = (int)((total + downloadLength) / contentLength);
+                        int progress = (int)((total + downloadLength) * 100 / contentLength);
                         publishProgress(progress);
                     }
                 }

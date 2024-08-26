@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         int id = v.getId();
         if (id == R.id.btn_start_download) {
-            String url = "https://www.baidu.com/img/flexible/logo/pc/index.png";
+            String url = "https://vscode.download.prss.microsoft.com/dbazure/download/stable/fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/VSCodeUserSetup-x64-1.92.2.exe";
             downloadBinder.startDownload(url);
         } else if (id == R.id.btn_pause_download) {
             downloadBinder.pauseDownload();

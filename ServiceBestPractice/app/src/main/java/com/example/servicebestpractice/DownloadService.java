@@ -26,36 +26,36 @@ public class DownloadService extends Service {
     private final DownloadListener listener = new DownloadListener() {
         @Override
         public void onProgress(int progress) {
-            getNotificationManager().notify(1, getNotification("Downloading...", progress));
+            getNotificationManager().notify(1, getNotification(getString(R.string.downloading), progress));
         }
 
         @Override
         public void onSuccess() {
             downloadTask = null;
             stopForeground(true);
-            getNotificationManager().notify(1, getNotification("Download Success", -1));
-            Toast.makeText(DownloadService.this, "Download Success", Toast.LENGTH_SHORT).show();
+            getNotificationManager().notify(1, getNotification(getString(R.string.download_succeeded), -1));
+            Toast.makeText(DownloadService.this, getString(R.string.download_succeeded), Toast.LENGTH_SHORT).show();
         }
 
         @Override
         public void onFail() {
             downloadTask = null;
             stopForeground(true);
-            getNotificationManager().notify(1, getNotification("Download Fail", -1));
-            Toast.makeText(DownloadService.this, "Download Fail", Toast.LENGTH_SHORT).show();
+            getNotificationManager().notify(1, getNotification(getString(R.string.download_failed), -1));
+            Toast.makeText(DownloadService.this, getString(R.string.download_failed), Toast.LENGTH_SHORT).show();
         }
 
         @Override
         public void onPause() {
             downloadTask = null;
-            Toast.makeText(DownloadService.this, "Paused", Toast.LENGTH_SHORT).show();
+            Toast.makeText(DownloadService.this, getString(R.string.download_paused), Toast.LENGTH_SHORT).show();
         }
 
         @Override
         public void onCancel() {
             downloadTask = null;
             stopForeground(true);
-            Toast.makeText(DownloadService.this, "Canceled", Toast.LENGTH_SHORT).show();
+            Toast.makeText(DownloadService.this, getString(R.string.download_canceled), Toast.LENGTH_SHORT).show();
         }
     };
 
@@ -67,8 +67,8 @@ public class DownloadService extends Service {
                 downloadUrl = url;
                 downloadTask = new DownloadTask(listener);
                 downloadTask.execute(downloadUrl);
-                startForeground(1, getNotification("Downloading...", 0), ServiceInfo.FOREGROUND_SERVICE_TYPE_SPECIAL_USE);
-                Toast.makeText(DownloadService.this, "Downloading...", Toast.LENGTH_SHORT).show();
+                startForeground(1, getNotification(getString(R.string.downloading), 0), ServiceInfo.FOREGROUND_SERVICE_TYPE_SPECIAL_USE);
+                Toast.makeText(DownloadService.this, getString(R.string.downloading), Toast.LENGTH_SHORT).show();
             }
         }
 
@@ -92,7 +92,7 @@ public class DownloadService extends Service {
                     }
                     getNotificationManager().cancel(1);
                     stopForeground(true);
-                    Toast.makeText(DownloadService.this, "Canceled", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DownloadService.this, getString(R.string.download_canceled), Toast.LENGTH_SHORT).show();
                 }
             }
         }
