@@ -9,4 +9,5 @@
     <string name="download_failed">下载失败</string>
     <string name="download_canceled">下载已取消</string>
     <string name="download_paused">下载已暂停</string>
+    <string name="hint_text">请输入下载链接</string>
 </resources>

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 import android.Manifest;
 
@@ -29,10 +30,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         public void onServiceDisconnected(ComponentName name) {}
     };
 
+    private EditText downloadUrl;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        downloadUrl = findViewById(R.id.download_url);
 
         Button btnStartDownload = findViewById(R.id.btn_start_download);
         Button btnPauseDownload = findViewById(R.id.btn_pause_download);
@@ -74,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         int id = v.getId();
         if (id == R.id.btn_start_download) {
-            String url = "https://vscode.download.prss.microsoft.com/dbazure/download/stable/fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/VSCodeUserSetup-x64-1.92.2.exe";
+            String url = downloadUrl.getText().toString().strip();
             downloadBinder.startDownload(url);
         } else if (id == R.id.btn_pause_download) {
             downloadBinder.pauseDownload();

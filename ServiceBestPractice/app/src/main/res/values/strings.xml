@@ -8,4 +8,5 @@
     <string name="download_failed">Download Failed</string>
     <string name="download_paused">Download Paused</string>
     <string name="download_canceled">Download Canceled</string>
+    <string name="hint_text">Input a Download Link</string>
 </resources>
