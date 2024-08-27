@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">测试广播</string>
+    <string name="net_available">网络可用</string>
+    <string name="net_unavailable">网络不可用</string>
+</resources>

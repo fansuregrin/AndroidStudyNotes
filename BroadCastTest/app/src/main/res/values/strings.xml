@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BroadCastTest</string>
+    <string name="net_available">Network is available</string>
+    <string name="net_unavailable">Network is unavailable</string>
+</resources>
