@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BroadCastTest2</string>
+    <string name="received_my_broadcast">Received in AnotherBroadcastReceiver</string>
+</resources>

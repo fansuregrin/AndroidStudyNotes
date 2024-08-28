@@ -5,19 +5,22 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.ConnectivityManager;
-import android.net.Network;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
     private NetworkChangeReceiver networkChangeReceiver;
+
+    private MyBroadcastReceiver myBroadcastReceiver;
+
+    private BootCompleteReceiver bootCompleteReceiver;
 
     class NetworkChangeReceiver extends BroadcastReceiver {
         @Override
@@ -48,10 +51,17 @@ public class MainActivity extends AppCompatActivity {
         networkChangeReceiver = new NetworkChangeReceiver();
         registerReceiver(networkChangeReceiver, intentFilter);
 
+        bootCompleteReceiver = new BootCompleteReceiver();
+        registerReceiver(bootCompleteReceiver, new IntentFilter(Intent.ACTION_BOOT_COMPLETED), RECEIVER_EXPORTED);
+
+        myBroadcastReceiver = new MyBroadcastReceiver();
+        registerReceiver(myBroadcastReceiver,
+            new IntentFilter("com.example.broadcasttest.MY_BROADCAST"), RECEIVER_EXPORTED);
+
+
         Button btnSendBroadcast = findViewById(R.id.btnSendBroadcast);
         btnSendBroadcast.setOnClickListener(v -> {
             Intent intent = new Intent("com.example.broadcasttest.MY_BROADCAST");
-            intent.setPackage(getPackageName());
             sendBroadcast(intent);
         });
     }
@@ -60,5 +70,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         unregisterReceiver(networkChangeReceiver);
+        unregisterReceiver(bootCompleteReceiver);
+        unregisterReceiver(myBroadcastReceiver);
     }
 }
