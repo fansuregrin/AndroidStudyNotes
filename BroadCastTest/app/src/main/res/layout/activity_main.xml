@@ -6,7 +6,7 @@
 
     <Button
         android:id="@+id/btnSendBroadcast"
-        android:text="@string/send_broadcast"
+        android:text="@string/send_normal_broadcast"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />

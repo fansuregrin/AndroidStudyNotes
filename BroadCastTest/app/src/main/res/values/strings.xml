@@ -3,6 +3,6 @@
     <string name="net_available">Network is available</string>
     <string name="net_unavailable">Network is unavailable</string>
     <string name="boot_complete">Boot Completed</string>
-    <string name="received_msg">Received in MyBroadCastReceiver</string>
-    <string name="send_broadcast">Send BroadCast</string>
+    <string name="received_msg">Received in MyBroadcastReceiver</string>
+    <string name="send_normal_broadcast">Send Normal BroadCast</string>
 </resources>
