@@ -9,6 +9,7 @@ import android.net.Network;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;;
@@ -46,6 +47,13 @@ public class MainActivity extends AppCompatActivity {
         intentFilter.addAction("android.net.conn.CONNECTIVITY_CHANGE");
         networkChangeReceiver = new NetworkChangeReceiver();
         registerReceiver(networkChangeReceiver, intentFilter);
+
+        Button btnSendBroadcast = findViewById(R.id.btnSendBroadcast);
+        btnSendBroadcast.setOnClickListener(v -> {
+            Intent intent = new Intent("com.example.broadcasttest.MY_BROADCAST");
+            intent.setPackage(getPackageName());
+            sendBroadcast(intent);
+        });
     }
 
     @Override

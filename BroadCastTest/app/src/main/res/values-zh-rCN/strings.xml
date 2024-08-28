@@ -4,4 +4,6 @@
     <string name="net_available">网络可用</string>
     <string name="net_unavailable">网络不可用</string>
     <string name="boot_complete">启动完成</string>
+    <string name="received_msg">在MyBroadCastReceiver中接收到</string>
+    <string name="send_broadcast">发送广播</string>
 </resources>
