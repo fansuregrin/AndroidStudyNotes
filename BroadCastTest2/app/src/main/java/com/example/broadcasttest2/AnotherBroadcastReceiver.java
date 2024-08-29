@@ -7,7 +7,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 public class AnotherBroadcastReceiver extends BroadcastReceiver {
-    private static final String TAG = "AnotherBroadcastReceive";
+    private static final String TAG = "AnotherBroadcastReceiver";
 
     @Override
     public void onReceive(Context context, Intent intent) {

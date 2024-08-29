@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
         btnSendBroadcast.setOnClickListener(v -> {
             Intent intent = new Intent("com.example.broadcasttest.MY_BROADCAST");
             sendBroadcast(intent);
+            Log.d(TAG, "send broadcast from com.example.broadcasttest");
         });
     }
 
