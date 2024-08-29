@@ -40,6 +40,13 @@
         android:text="@string/start_foreground_service" />
 
     <Button
+        android:id="@+id/btn_stop_foreground_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/stop_foreground_service" />
+
+    <Button
         android:id="@+id/btn_start_intent_service"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
