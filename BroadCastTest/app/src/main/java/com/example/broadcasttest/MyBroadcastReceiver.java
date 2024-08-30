@@ -1,4 +1,4 @@
-    package com.example.broadcasttest;
+package com.example.broadcasttest;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -13,5 +13,6 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         Log.d(TAG, "onReceive: received broadcast");
         Toast.makeText(context, R.string.received_my_broadcast, Toast.LENGTH_SHORT).show();
+        abortBroadcast();
     }
 }

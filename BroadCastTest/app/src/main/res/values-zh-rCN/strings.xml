@@ -6,4 +6,5 @@
     <string name="boot_complete">启动完成</string>
     <string name="send_normal_broadcast">发送标准广播</string>
     <string name="received_my_broadcast">在MyBroadcastReceiver中接收到广播</string>
+    <string name="send_ordered_broadcast">发送有序广播</string>
 </resources>

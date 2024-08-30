@@ -5,8 +5,15 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/btnSendBroadcast"
+        android:id="@+id/btnSendNormalBroadcast"
         android:text="@string/send_normal_broadcast"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnSendOrderedBroadcast"
+        android:text="@string/send_ordered_broadcast"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />

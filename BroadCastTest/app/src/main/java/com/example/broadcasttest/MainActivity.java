@@ -54,16 +54,23 @@ public class MainActivity extends AppCompatActivity {
         bootCompleteReceiver = new BootCompleteReceiver();
         registerReceiver(bootCompleteReceiver, new IntentFilter(Intent.ACTION_BOOT_COMPLETED), RECEIVER_EXPORTED);
 
+        intentFilter = new IntentFilter("com.example.broadcasttest.MY_BROADCAST");
+        intentFilter.setPriority(100);
         myBroadcastReceiver = new MyBroadcastReceiver();
-        registerReceiver(myBroadcastReceiver,
-            new IntentFilter("com.example.broadcasttest.MY_BROADCAST"), RECEIVER_EXPORTED);
+        registerReceiver(myBroadcastReceiver, intentFilter, RECEIVER_EXPORTED);
 
-
-        Button btnSendBroadcast = findViewById(R.id.btnSendBroadcast);
-        btnSendBroadcast.setOnClickListener(v -> {
+        Button btnSendNormalBroadcast = findViewById(R.id.btnSendNormalBroadcast);
+        btnSendNormalBroadcast.setOnClickListener(v -> {
             Intent intent = new Intent("com.example.broadcasttest.MY_BROADCAST");
             sendBroadcast(intent);
-            Log.d(TAG, "send broadcast from com.example.broadcasttest");
+            Log.d(TAG, "send normal broadcast from com.example.broadcasttest");
+        });
+
+        Button btnSendOrderedBroadcast = findViewById(R.id.btnSendOrderedBroadcast);
+        btnSendOrderedBroadcast.setOnClickListener(v -> {
+            Intent intent = new Intent("com.example.broadcasttest.MY_BROADCAST");
+            sendOrderedBroadcast(intent, null);
+            Log.d(TAG, "send ordered broadcast from com.example.broadcasttest");
         });
     }
 

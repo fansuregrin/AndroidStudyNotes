@@ -4,5 +4,6 @@
     <string name="net_unavailable">Network is unavailable</string>
     <string name="boot_complete">Boot Completed</string>
     <string name="received_my_broadcast">Received in MyBroadcastReceiver</string>
-    <string name="send_normal_broadcast">Send Normal BroadCast</string>
+    <string name="send_normal_broadcast">Send Normal Broadcast</string>
+    <string name="send_ordered_broadcast">Send Ordered Broadcast</string>
 </resources>
