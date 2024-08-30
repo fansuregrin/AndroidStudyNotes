@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BroadcastBestPractice</string>
+    <string name="account">Account</string>
+    <string name="password">Password</string>
+    <string name="account_hint">Input your account</string>
+    <string name="password_hint">Input your password</string>
+    <string name="login">Login</string>
+    <string name="login_failed">Your account or password is invalid!</string>
+    <string name="fore_offline">Force Offline</string>
+    <string name="warning">Warning</string>
+    <string name="offline_msg">You are forced to be offline. Please try to login again.</string>
+    <string name="ok">OK</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">广播实践</string>
+    <string name="account">账号</string>
+    <string name="password">密码</string>
+    <string name="account_hint">请输入您的账号</string>
+    <string name="password_hint">请输入您的密码</string>
+    <string name="login">登录</string>
+    <string name="login_failed">您的账号或密码不正确</string>
+    <string name="fore_offline">强制下线</string>
+    <string name="warning">警告</string>
+    <string name="offline_msg">您已被强制下线，请重新登录。</string>
+    <string name="ok">确认</string>
+</resources>
