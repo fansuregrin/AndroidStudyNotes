@@ -23,10 +23,19 @@ public class DownloadService extends Service {
 
     private String downloadUrl;
 
+    private Callback callback;
+
+    public interface Callback {
+        void setProgress(int progress);
+    }
+
     private final DownloadListener listener = new DownloadListener() {
         @Override
         public void onProgress(int progress) {
             getNotificationManager().notify(1, getNotification(getString(R.string.downloading), progress));
+            if (callback != null) {
+                callback.setProgress(progress);
+            }
         }
 
         @Override
@@ -56,6 +65,9 @@ public class DownloadService extends Service {
             downloadTask = null;
             stopForeground(true);
             Toast.makeText(DownloadService.this, getString(R.string.download_canceled), Toast.LENGTH_SHORT).show();
+            if (callback != null) {
+                callback.setProgress(0);
+            }
         }
     };
 
@@ -95,6 +107,10 @@ public class DownloadService extends Service {
                     Toast.makeText(DownloadService.this, getString(R.string.download_canceled), Toast.LENGTH_SHORT).show();
                 }
             }
+        }
+
+        public void setCallback(Callback callback) {
+            DownloadService.this.callback = callback;
         }
     }
 

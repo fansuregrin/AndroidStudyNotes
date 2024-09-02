@@ -9,6 +9,7 @@ import android.os.IBinder;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 import android.Manifest;
 
@@ -20,10 +21,18 @@ import androidx.core.content.ContextCompat;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private DownloadService.DownloadBinder downloadBinder;
 
+    private ProgressBar progressBar;
+
     private ServiceConnection connection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
             downloadBinder = (DownloadService.DownloadBinder) service;
+            downloadBinder.setCallback(new DownloadService.Callback() {
+                @Override
+                public void setProgress(int progress) {
+                    progressBar.setProgress(progress);
+                }
+            });
         }
 
         @Override
@@ -38,6 +47,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         downloadUrl = findViewById(R.id.download_url);
+
+        progressBar = findViewById(R.id.progress_bar);
 
         Button btnStartDownload = findViewById(R.id.btn_start_download);
         Button btnPauseDownload = findViewById(R.id.btn_pause_download);
