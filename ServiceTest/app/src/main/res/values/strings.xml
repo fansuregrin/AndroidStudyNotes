@@ -9,4 +9,11 @@
     <string name="start_intent_service">Start Intent Service</string>
     <string name="channel_name">Test Channel One</string>
     <string name="foreground_service">The application is executing a task in the foreground…</string>
+    <string name="download_started">Download Started</string>
+    <string name="download_paused">Download Paused</string>
+    <string name="getting_progress">Get Progress</string>
+    <string name="start_download">Start Download</string>
+    <string name="pause_download">Pause Download</string>
+    <string name="get_progress">Get Progress</string>
+    <string name="nothing">Null</string>
 </resources>

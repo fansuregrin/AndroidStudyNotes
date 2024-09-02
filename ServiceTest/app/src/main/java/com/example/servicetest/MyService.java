@@ -11,14 +11,37 @@ public class MyService extends Service {
 
     private DownloadBinder mBinder = new DownloadBinder();
 
+    private Callback callback;
+
+    public interface Callback {
+        void displayMsg(String msg);
+    }
+
     class DownloadBinder extends Binder {
         public void startDownload() {
             Log.d(TAG, "startDownload");
+            if (callback != null) {
+                callback.displayMsg(getString(R.string.download_started));
+            }
         }
 
         public int getProgress() {
             Log.d(TAG, "getProgress");
+            if (callback != null) {
+                callback.displayMsg(getString(R.string.get_progress));
+            }
             return 0;
+        }
+
+        public void pauseDownload() {
+            Log.d(TAG, "pauseDownload");
+            if (callback != null) {
+                callback.displayMsg(getString(R.string.download_paused));
+            }
+        }
+
+        public MyService getService() {
+            return MyService.this;
         }
     }
 
@@ -53,5 +76,9 @@ public class MyService extends Service {
     public void onDestroy() {
         Log.d(TAG, "onDestroy");
         super.onDestroy();
+    }
+
+    public void setCallback(Callback callback) {
+        this.callback = callback;
     }
 }

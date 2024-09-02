@@ -10,4 +10,11 @@
     <string name="start_intent_service">启动 IntentService</string>
     <string name="channel_name">测试渠道一</string>
     <string name="foreground_service">应用正在前台执行任务......</string>
+    <string name="start_download">开始下载</string>
+    <string name="pause_download">暂停下载</string>
+    <string name="get_progress">获取进度</string>
+    <string name="nothing">这里啥也没有~</string>
+    <string name="download_started">下载已开始</string>
+    <string name="download_paused">下载已暂停</string>
+    <string name="getting_progress">正在获取进度</string>
 </resources>

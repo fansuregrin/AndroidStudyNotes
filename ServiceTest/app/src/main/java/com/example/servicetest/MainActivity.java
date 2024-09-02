@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,13 +23,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private MyService.DownloadBinder downloadBinder;
 
+    private TextView displayArea;
+
     private final ServiceConnection connection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
             Log.d(TAG, "onServiceConnected");
             downloadBinder = (MyService.DownloadBinder) service;
-            downloadBinder.startDownload();
-            downloadBinder.getProgress();
+
+            downloadBinder.getService().setCallback(new MyService.Callback() {
+                @Override
+                public void displayMsg(String msg) {
+                    displayArea.setText(msg);
+                }
+            });
         }
 
         @Override
@@ -43,25 +50,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnStartService = findViewById(R.id.btn_start_service);
-        btnStartService.setOnClickListener(this);
-        Button btnStopService = findViewById(R.id.btn_stop_service);
-        btnStopService.setOnClickListener(this);
-
-        Button btnBindService = findViewById(R.id.btn_bind_service);
-        btnBindService.setOnClickListener(this);
-
-        Button btnUnbindService = findViewById(R.id.btn_unbind_service);
-        btnUnbindService.setOnClickListener(this);
-
-        Button btnStartForegroundService = findViewById(R.id.btn_start_foreground_service);
-        btnStartForegroundService.setOnClickListener(this);
-
-        Button btnStopForegroundService = findViewById(R.id.btn_stop_foreground_service);
-        btnStopForegroundService.setOnClickListener(this);
-
-        Button btnStartIntentService = findViewById(R.id.btn_start_intent_service);
-        btnStartIntentService.setOnClickListener(this);
+        displayArea = findViewById(R.id.display_area);
+        findViewById(R.id.btn_start_service).setOnClickListener(this);
+        findViewById(R.id.btn_stop_service).setOnClickListener(this);
+        findViewById(R.id.btn_bind_service).setOnClickListener(this);
+        findViewById(R.id.btn_unbind_service).setOnClickListener(this);
+        findViewById(R.id.btn_start_foreground_service).setOnClickListener(this);
+        findViewById(R.id.btn_stop_foreground_service).setOnClickListener(this);
+        findViewById(R.id.btn_start_intent_service).setOnClickListener(this);
+        findViewById(R.id.btn_start_download).setOnClickListener(this);
+        findViewById(R.id.btn_pause_download).setOnClickListener(this);
+        findViewById(R.id.btn_get_progress).setOnClickListener(this);
 
         // 检查权限
         if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.POST_NOTIFICATIONS)
@@ -112,6 +111,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Log.d(TAG, "onClick: thread id is " + Thread.currentThread().getId());
             Intent intent = new Intent(this, MyIntentService.class);
             startService(intent);
+        } else if (id == R.id.btn_start_download) {
+            if (downloadBinder != null) {
+                downloadBinder.startDownload();
+            }
+        } else if (id == R.id.btn_pause_download) {
+            if (downloadBinder != null) {
+                downloadBinder.pauseDownload();
+            }
+        } else if (id == R.id.btn_get_progress) {
+            if (downloadBinder != null) {
+                downloadBinder.getProgress();
+            }
         }
     }
 }
