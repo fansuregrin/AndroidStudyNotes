@@ -22,7 +22,9 @@
             android:name=".RemoteService"
             android:enabled="true"
             android:exported="true">
-
+            <intent-filter>
+                <action android:name="com.example.aidl_demo.REMOTE_SERVICE" />
+            </intent-filter>
         </service>
 
     </application>
