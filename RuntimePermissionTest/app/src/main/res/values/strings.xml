@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RuntimePermissionTest</string>
+    <string name="call">Call Phone</string>
+    <string name="permission_alert">You denied the permission.</string>
+</resources>
