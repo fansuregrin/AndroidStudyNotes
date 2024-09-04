@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">AIDL Client</string>
-    <string name="bind_serv">Bind Service</string>
-    <string name="unbind_serv">Unbind Service</string>
-</resources>

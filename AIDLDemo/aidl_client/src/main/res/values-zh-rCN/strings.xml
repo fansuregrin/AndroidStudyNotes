@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">AIDL 客户端</string>
-    <string name="bind_serv">绑定服务</string>
-    <string name="unbind_serv">解绑服务</string>
-</resources>
