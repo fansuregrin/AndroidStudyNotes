@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">访问联系人测试</string>
+    <string name="permission_alert">您拒绝了权限</string>
+</resources>
