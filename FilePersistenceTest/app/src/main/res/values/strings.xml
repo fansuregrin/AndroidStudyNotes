@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FilePersistenceTest</string>
+    <string name="input_hint">Please Input Something</string>
+    <string name="restore_succeeded">Restore succeeded</string>
+</resources>
