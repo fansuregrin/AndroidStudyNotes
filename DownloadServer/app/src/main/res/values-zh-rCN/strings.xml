@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">下载服务端</string>
+    <string name="downloading">下载中</string>
+    <string name="download_succeeded">下载成功</string>
+    <string name="download_failed">下载失败</string>
+    <string name="download_canceled">下载已取消</string>
+    <string name="download_paused">下载已暂停</string>
+</resources>

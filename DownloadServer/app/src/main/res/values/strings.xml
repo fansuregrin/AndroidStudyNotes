@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DownloadServer</string>
+    <string name="downloading">Downloading…</string>
+    <string name="download_succeeded">Download Succeeded</string>
+    <string name="download_failed">Download Failed</string>
+    <string name="download_paused">Download Paused</string>
+    <string name="download_canceled">Download Canceled</string>
+</resources>

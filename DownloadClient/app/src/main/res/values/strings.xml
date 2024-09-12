@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DownloadClient</string>
+    <string name="hint_text">Input a Download Link</string>
+    <string name="start_download">Start Download</string>
+    <string name="pause_download">Pause Download</string>
+    <string name="cancel_download">Cancel Download</string>
+</resources>
