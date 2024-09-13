@@ -1,10 +1,11 @@
 // DownloadInterface.aidl
 package com.example.downloadserver;
 
-// Declare any non-default types here with import statements
+import com.example.downloadclient.DownloadListener;
 
 interface DownloadInterface {
     void startDownload(String url);
     void pauseDownload();
     void cancelDownload();
+    void setListener(DownloadListener listener);
 }

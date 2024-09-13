@@ -5,16 +5,20 @@ import android.content.Intent;
 import android.os.Environment;
 import android.os.IBinder;
 import android.os.RemoteException;
-import android.widget.Toast;
+import android.util.Log;
 
 import java.io.File;
 
+import com.example.downloadclient.DownloadListener;
+
 public class DownloadService extends Service {
+    private static final String TAG = "DownloadService";
+
     private DownloadTask downloadTask;
 
     private String downloadUrl;
 
-    private final DownloadListener listener = null;
+    private DownloadListener listener = null;
 
     private final DownloadInterface.Stub mBinder = new DownloadInterface.Stub() {
         @Override
@@ -23,7 +27,8 @@ public class DownloadService extends Service {
                 downloadUrl = url;
                 downloadTask = new DownloadTask(listener);
                 downloadTask.execute(downloadUrl);
-                Toast.makeText(DownloadService.this, getString(R.string.downloading), Toast.LENGTH_SHORT).show();
+                listener.onStartDownload();
+                Log.d(TAG, "startDownload: start download");
             }
         }
 
@@ -31,6 +36,8 @@ public class DownloadService extends Service {
         public void pauseDownload() throws RemoteException {
             if (downloadTask != null) {
                 downloadTask.pauseDownload();
+                downloadTask = null;
+                Log.d(TAG, "pauseDownload: pause download");
             }
         }
 
@@ -38,17 +45,28 @@ public class DownloadService extends Service {
         public void cancelDownload() throws RemoteException {
             if (downloadTask != null) {
                 downloadTask.cancelDownload();
+                downloadTask = null;
             } else {
+                listener.onCancel();
                 if (downloadUrl != null) {
                     String filename = downloadUrl.substring(downloadUrl.lastIndexOf('/'));
                     String directory = Environment
                             .getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath();
                     File file = new File(directory + filename);
                     if (file.exists()) {
-                        file.delete();
+                        if (file.delete()) {
+                            Log.d(TAG, "cancelDownload: delete the downloaded file successfully");
+                        } else {
+                            Log.d(TAG, "cancelDownload: failed to delete the downloaded file");
+                        }
                     }
                 }
             }
+        }
+
+        @Override
+        public void setListener(DownloadListener listener) throws RemoteException {
+            DownloadService.this.listener = listener;
         }
     };
 

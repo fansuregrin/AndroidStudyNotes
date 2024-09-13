@@ -4,4 +4,10 @@
     <string name="start_download">Start Download</string>
     <string name="pause_download">Pause Download</string>
     <string name="cancel_download">Cancel Download</string>
+    <string name="downloading">Downloading…</string>
+    <string name="download_succeeded">Download Succeeded</string>
+    <string name="download_failed">Download Failed</string>
+    <string name="download_paused">Download Paused</string>
+    <string name="download_canceled">Download Canceled</string>
+    <string name="permission_alert">Denying permission will prevent you from using the app</string>
 </resources>

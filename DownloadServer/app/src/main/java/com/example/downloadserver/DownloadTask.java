@@ -2,7 +2,10 @@ package com.example.downloadserver;
 
 import android.os.AsyncTask;
 import android.os.Environment;
+import android.os.RemoteException;
 import android.util.Log;
+
+import com.example.downloadclient.DownloadListener;
 
 import java.io.File;
 import java.io.IOException;
@@ -104,7 +107,11 @@ public class DownloadTask extends AsyncTask<String, Integer, Integer> {
     protected void onProgressUpdate(Integer... values) {
         int progress = values[0];
         if (progress > lastProgress) {
-            listener.onProgress(progress);
+            try {
+                listener.onProgress(progress);
+            } catch (RemoteException e) {
+                Log.e(TAG, "onProgressUpdate: ", e);;
+            }
             lastProgress = progress;
         }
     }
@@ -112,10 +119,34 @@ public class DownloadTask extends AsyncTask<String, Integer, Integer> {
     @Override
     protected void onPostExecute(Integer status) {
         switch (status) {
-            case TYPE_SUCCESS: listener.onSuccess(); break;
-            case TYPE_FAIL: listener.onFail(); break;
-            case TYPE_CANCEL: listener.onCancel(); break;
-            case TYPE_PAUSE: listener.onPause(); break;
+            case TYPE_SUCCESS:
+                try {
+                    listener.onSuccess();
+                } catch (RemoteException e) {
+                    Log.e(TAG, "onPostExecute: ", e);
+                }
+                break;
+            case TYPE_FAIL:
+                try {
+                    listener.onFail();
+                } catch (RemoteException e) {
+                    Log.e(TAG, "onPostExecute: ", e);
+                }
+                break;
+            case TYPE_CANCEL:
+                try {
+                    listener.onCancel();
+                } catch (RemoteException e) {
+                    Log.e(TAG, "onPostExecute: ", e);
+                }
+                break;
+            case TYPE_PAUSE:
+                try {
+                    listener.onPause();
+                } catch (RemoteException e) {
+                    Log.e(TAG, "onPostExecute: ", e);
+                }
+                break;
             default: break;
         }
     }
