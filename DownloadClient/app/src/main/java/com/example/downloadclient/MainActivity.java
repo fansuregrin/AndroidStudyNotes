@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         public void onStartDownload() throws RemoteException {
             getNotificationManager().notify(NOTIFY_ID,
                 getNotification(getString(R.string.downloading), 0));
+            Log.d(TAG, "onStartDownload");
         }
 
         @Override
@@ -67,7 +68,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         @Override
         public void onPause() throws RemoteException {
-            Log.d(TAG, "onPause: download task paused");
+            int progress = progressBar.getProgress();
+            getNotificationManager().notify(NOTIFY_ID,
+                getNotification(getString(R.string.download_paused), progress));
+            Log.d(TAG, "onPause: download task paused, current progress " + progress + "%");
         }
 
         @Override

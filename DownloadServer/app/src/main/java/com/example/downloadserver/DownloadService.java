@@ -23,13 +23,11 @@ public class DownloadService extends Service {
     private final DownloadInterface.Stub mBinder = new DownloadInterface.Stub() {
         @Override
         public void startDownload(String url) throws RemoteException {
-            if (downloadTask == null) {
-                downloadUrl = url;
-                downloadTask = new DownloadTask(listener);
-                downloadTask.execute(downloadUrl);
-                listener.onStartDownload();
-                Log.d(TAG, "startDownload: start download");
-            }
+            downloadUrl = url;
+            downloadTask = new DownloadTask(listener);
+            downloadTask.execute(downloadUrl);
+            listener.onStartDownload();
+            Log.d(TAG, "startDownload: start download");
         }
 
         @Override
