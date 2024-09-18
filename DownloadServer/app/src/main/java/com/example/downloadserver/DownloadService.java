@@ -41,6 +41,7 @@ public class DownloadService extends Service {
 
         @Override
         public void cancelDownload() throws RemoteException {
+            Log.d(TAG, "cancelDownload: cancel download");
             if (downloadTask != null) {
                 downloadTask.cancelDownload();
                 downloadTask = null;
@@ -70,11 +71,13 @@ public class DownloadService extends Service {
 
     @Override
     public void onCreate() {
+        Log.d(TAG, "onCreate");
         super.onCreate();
     }
 
     @Override
     public IBinder onBind(Intent intent) {
+        Log.d(TAG, "onBind");
         return mBinder;
     }
 }
