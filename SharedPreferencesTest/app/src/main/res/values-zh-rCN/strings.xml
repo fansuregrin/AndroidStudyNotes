@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SharedPreferencesTest</string>
+    <string name="save_data">保存数据</string>
+    <string name="restore_data">恢复数据</string>
+</resources>
