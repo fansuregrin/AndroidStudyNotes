@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">测试数据库</string>
+    <string name="open_db">打开数据库</string>
+    <string name="open_db_successfully">成功打开数据库</string>
+    <string name="add_data">添加数据</string>
+    <string name="update_data">更新数据</string>
+    <string name="del_data">删除数据</string>
+    <string name="query_data">查询数据</string>
+</resources>

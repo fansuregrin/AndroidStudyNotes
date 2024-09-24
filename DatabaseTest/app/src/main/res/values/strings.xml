@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DatabaseTest</string>
+    <string name="open_db">Open Database</string>
+    <string name="open_db_successfully">Open database successfully</string>
+    <string name="add_data">Add Data</string>
+    <string name="update_data">Update Data</string>
+    <string name="del_data">Delete Data</string>
+    <string name="query_data">Query Data</string>
+</resources>
